@@ -1,0 +1,28 @@
+### Get all contacts
+GET http://localhost:5000/contacts
+
+### Get contact by ID
+GET http://localhost:5000/contacts/2
+
+### Add new contact
+POST http://localhost:5000/contacts
+Content-Type: application/json
+
+{
+  "name": "Sai Suraj",
+  "email": "sai@example.com",
+  "phone": "9866395959"
+}
+
+### Update contact
+PUT http://localhost:5000/contacts/2
+Content-Type: application/json
+
+{
+  "name": "suraj",
+  "email": "suraj@example.com",
+  "phone": "9866395959"
+}
+
+### Delete contact
+DELETE http://localhost:5000/contacts/2
